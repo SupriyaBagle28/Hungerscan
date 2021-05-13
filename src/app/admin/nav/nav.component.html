@@ -1,0 +1,26 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+        <mat-toolbar><strong><img src="assets/hungerscanlogo.svg" style="height: 60px;width: 60px;">HungerScan</strong></mat-toolbar>
+        <mat-nav-list class="mat-list-item">
+            <a mat-list-item routerLink="billing-dashboard">Billing DashBoard</a>
+            <div>
+                <a mat-list-item routerLink="menu-details"><img src="assets/menu.svg">Menu Details</a>
+            </div>
+            <a mat-list-item routerLink="profile"><img src="assets/profile.svg">Profile</a>
+            <!-- <a mat-list-item routerLink=""><img src="assets/qrcodes.svg">QRCodes</a> -->
+            <!-- <a mat-list-item routerLink=""><img src="assets/report.svg">Reports</a> -->
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <mat-toolbar>
+            <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+            <span><strong>Resca</strong></span>
+        </mat-toolbar>
+        <div class="main-content">
+            <app-main></app-main>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

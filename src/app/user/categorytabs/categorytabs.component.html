@@ -1,0 +1,10 @@
+<div class="container">
+    <mat-tab-group mat-align-tabs="start">
+        <div class="tabs" *ngFor="let m of menu">
+            <mat-tab label={{m.category}} class="tabs">
+                <app-subnavbar [categoryData]="m"></app-subnavbar>
+            </mat-tab>
+        </div>
+
+    </mat-tab-group>
+</div>

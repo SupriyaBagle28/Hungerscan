@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'HungerScanApp';
+
+//   bills=[{item:"PBM", price:280},
+//   {item:"biryani", price:280}
+// ]
 }

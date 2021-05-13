@@ -1,0 +1,225 @@
+<!-- <div class="container">
+
+
+    <div class="row">
+        <span style="font-size: 20px;padding-bottom: 120px;"><strong>Menu</strong></span>
+        <button class="categorybutton" (click)="addCategory()"> + New category</button>
+
+
+    </div>
+    <div *ngIf="addcategory" class="row">
+        <form #submitform="ngForm" (ngSubmit)="saveForm(submitform)">
+            <div class="addCategory">
+                <div class=" categoryname ">
+                    <input type="text" placeholder="Name" class="form-control" name="categoryName" [(ngModel)]="categoryName">
+                </div>
+                <div class="buttonsave">
+                    <button type="button" class="buttonsave" (click)="saveForm(submitform)">Save</button>
+                </div>
+
+                <div class="buttoncancel">
+                    <button type="button" class="buttoncancel" (click)="cancelForm()"> <img src="assets/cancelbutton.svg"> </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <div class="table-responsive-xs" *ngFor="let category of menudata | keyvalue">
+
+        <table class="table" style="width: 95%;overflow: scroll;overflow-x: auto;">
+
+            <tr>
+
+                <span style="background-color: gray;color: white;padding-left: 8px;padding-right: 8px;"><th  style="text-align: center;font-family: arial-nova;">{{category.key}}</th></span>
+                <th class="maindescription">description</th>
+                <th class="mainprice" colspan="2" style="text-align: center; ">Price</th>
+                <th class="maintype" style="text-align: center;">type</th>
+                <th class="mainactions" colspan="2" style="text-align: center;padding-left: 0;">Actions</th>
+            </tr>
+
+            <tbody style="box-shadow: 2px 5px 5px rgb(194, 191, 191);background-color: white;">
+                <tr *ngFor="let dishes of category.value">
+                    <td class="maincategory" style=" padding: 10px;">{{dishes.Name}}</td>
+                    <td class="maindescription">{{dishes.Description}}</td>
+                    <td class="mainpricehalf">{{dishes.Price_Half}}</td>
+                    <td class="mainpricehalf">{{dishes.Price_Full}}</td>
+                    <td class="maintype" style="text-align: center;">{{dishes.Type}}</td>
+                    <td class="edit" style="text-align: center;"><button class="editbut" (click)="edit()"><img src="/assets/edit.svg"></button></td>
+                    <td class="delete" style="text-align: center;"><button class="deletebut" (click)="delete(dishes.id)"><img src="/assets/delete.svg"></button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <button class="button" style="margin-top: 5px;" (click)="newItem()">+ New item</button>
+
+    <div class="newitem" *ngIf="openform">
+        <form #submitform="ngForm" (ngSubmit)="saveForm(submitform)">
+
+            <div class="addnewitem" style="width:97%">
+                <div class=" dishname ">
+                    <input type="text" placeholder="Name" class="form-control" name="dishName" [(ngModel)]="dishName" />
+                </div>
+
+                <div class="description">
+                    <input type="text" placeholder="Description" class="form-control" name="description" [(ngModel)]="description" />
+                </div>
+
+                <div class="pricehalf ">
+                    <input class="pricehalf" type="text" placeholder="Price Half" class="form-control" name="priceHalf" [(ngModel)]="priceHalf" />
+                </div>
+
+                <div class=" pricefull">
+                    <input class="pricefull" type="text" placeholder="Price Full" class="form-control" name="priceFull" [(ngModel)]="priceFull" />
+                </div>
+
+                <div class="type">
+                    <input class="type" type="text" placeholder="type" class="form-control" name="type" [(ngModel)]="type" />
+                </div>
+
+                <div class="buttonsave">
+                    <button type="button" class="buttonsave" (click)="saveForm(submitform)">Save</button>
+                </div>
+
+                <div class="buttoncancel">
+                    <button type="button" class="buttoncancel" (click)="cancelForm()"> <img src="assets/cancelbutton.svg"> </button>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+</div>
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+    <span><strong>Menu</strong></span>
+    <button class="categorybutton" (click)="addCategory()"> + New category</button>
+</div>
+
+<div class="newcategory" *ngIf="opened">
+    <form class="form-inline" #submitcategory="ngForm" (ngSubmit)="saveCategory(submitcategory)">
+        <div class="row">
+            <div class="col-xs-10">
+                <input type="text" placeholder="Category" class="form-control" name="categoryName" [(ngModel)]="categoryName" />
+            </div>
+            <div class="col-xs-2">
+                <button type="button" class="btn" (click)="saveCategory(submitcategory)">Save</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-xs">
+                <tr>
+                    <th class="category">
+                        <div style="background-color: red;">STARTER
+                        </div>
+                    </th>
+                    <th class="description">DESCRIPTION</th>
+                    <th class="price" colspan="2">PRICE</th>
+                    <th class="type">TYPE</th>
+                    <th class="action" colspan="2">ACTION</th>
+                </tr>
+
+                <tbody class="content">
+                    <tr>
+                        <td>Salad</td>
+                        <td>Vegetables are mixed together</td>
+                        <td>120</td>
+                        <td>200</td>
+                        <td>Veg</td>
+                        <td><button class="editbut" (click)="edit()"><img src="/assets/edit.svg"></button></td>
+                        <td><button class="deletebut" (click)="edit()"><img src="/assets/delete.svg"></button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<button class="button" (click)="newItem()">+ New item</button>
+
+
+<div class="newitem" *ngIf="openform">
+    <form #submitform="ngForm" (ngSubmit)="saveForm(submitform)">
+
+        <div class="row">
+            <div class="form-group">
+                <div class=" col-xs-2   ">
+                    <input type="text" placeholder="Name" class="form-control" name="dishName" [(ngModel)]="dishName" />
+                </div>
+
+                <div class=" col-xs-3 ">
+                    <input type="text" placeholder="Description" class="form-control" name="description" [(ngModel)]="description" />
+                </div>
+
+                <div class="col-xs-2 ">
+                    <input class="pricehalf" type="text" placeholder="Price Half" class="form-control" name="priceHalf" [(ngModel)]="priceHalf" />
+                </div>
+
+                <div class=" col-xs-2">
+                    <input class="pricefull" type="text" placeholder="Price Full" class="form-control" name="priceFull" [(ngModel)]="priceFull" />
+                </div>
+
+                <div class=" col-xs-1">
+                    <input class="type" type="text" placeholder="type" class="form-control" name="type" [(ngModel)]="type" />
+                </div>
+
+                <div class=" col-xs-1">
+                    <button type="button" class="btn" (click)="saveForm(submitform)">Save</button>
+                </div>
+
+                <div class="col-xs-1 ">
+                    <button type="button" class="btncancel" (click)="cancelForm(submitform)"> <img src="assets/cancelbutton.svg"> </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div> -->

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="127.53" height="103.5" viewBox="0 0 127.53 103.5">
+  <defs>
+    <filter id="Icon_map-food" x="0" y="0" width="127.53" height="103.5" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Icon_map-food)">
+    <path id="Icon_map-food-2" data-name="Icon map-food" d="M110.008,25.646l-8.979,62.679H70.7L61.758,25.333H98.783L106.1,2.825l4.148,1.114L103.229,25.6l6.779.047ZM57.47,61.909s1.134-8.128-14.593-8.128H17.832c-15.7,0-14.593,8.128-14.593,8.128H57.47ZM3.239,80.2s-1.111,8.128,14.593,8.128H42.88c15.727,0,14.593-8.128,14.593-8.128H3.239Zm51.878-4.064a5.1,5.1,0,0,0,0-10.16H5.375a5.1,5.1,0,0,0,0,10.16H55.118Z" transform="translate(3.28 1.18)" fill="#f8306d"/>
+  </g>
+</svg>

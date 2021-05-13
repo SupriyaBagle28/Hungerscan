@@ -1,0 +1,92 @@
+<!-- <div class="container"> -->
+<!-- <div class="categories">
+        <div *ngFor="let d of data" (click)="onSelect(d.category)">
+            <div class="category">
+                <h3> {{d.category}}</h3>
+            </div>
+        </div>
+    </div> -->
+
+
+<!-- <div class="table-responsive-xs">
+        <table class="table">
+            <div class="menudetails">
+                <th style="text-align: left;">Name</th>
+                <th style="text-align: center;">Half</th>
+                <th>Full</th>
+                <tbody>
+                    <tr *ngFor="let data of menudata">
+                        <mat-card>
+                            <td class="name">
+                                <tr>{{data.Name}} <button (click)="toggleDescription()"><img src="assets/arrow.svg"></button></tr>
+                                <div *ngIf="showdescription==true">
+                                    <tr>{{data.Description}} </tr>
+                                </div>
+                            </td>
+                            <td class="pricehalf">{{data.Price_Half}}
+                                <button type="button" class="quantity-left-minus btn-number" data-type="minus" data-field="">
+                                <span class="glyphicon glyphicon-minus"></span>
+                              </button>
+                                <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                        <button type="button" class="quantity-right-plus btn btn-number" data-type="plus" data-field="">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                                </span>
+                            </td>
+                            <td class="pricefull">{{data.Price_Full}}
+                                <button type="button" class="quantity-left-minus btn-number" data-type="minus" data-field="">
+                            <span class="glyphicon glyphicon-minus"></span>
+                          </button>
+                                <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="quantity-right-plus btn  btn-number" data-type="plus" data-field="">
+                                        <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                                </span>
+                            </td>
+                        </mat-card>
+                    </tr>
+                </tbody>
+            </div>
+        </table>
+    </div>
+</div> -->
+
+
+<div class="container">
+    <div class="menuheader">
+        <p>NAME</p>
+        <p>HALF</p>
+        <p>FULL</p>
+    </div>
+    <div *ngFor="let data of menudata">
+        <mat-card class="menubody">
+            <div class="name">
+                {{data.Name}}
+            </div>
+            <div class="half">
+                {{data.Price_Half}}
+            </div>
+            <div>
+                <button class="increment" onclick="increment()">+</button>
+                <input type="number" class="inputdata" id=demoInput type=number min=1 max=100 value="Increment Value">
+
+                <button class="decrement" onclick="decrement()">-</button>
+            </div>
+
+
+            {{data.Price_Full}}
+            <div>
+                <button class="increment" onclick="increment()">+</button>
+                <input type="number" class="inputdata" id=demoInput type=number min=1 max=100>
+
+                <button class="decrement" onclick="decrement()">-</button>
+            </div>
+        </mat-card>
+
+
+
+    </div>
+    <button class="orderplacing">PLACE ORDER</button>
+</div>

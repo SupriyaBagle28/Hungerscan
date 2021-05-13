@@ -1,0 +1,129 @@
+/* .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row,
+td,
+.category {
+    padding: 5px;
+    font-style: normal;
+    font-family: arial-nova;
+    color: #4A6572;
+    transition: top ease 10s;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap
+}
+
+.category {
+    padding: 5px;
+    font-style: normal;
+    font-family: arial-nova;
+    color: #4A6572;
+    transition: top ease 10s;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap
+}
+
+.table-responsive-xs {
+    overflow-x: auto;
+    margin-left: 10px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+th:hover {
+    top: -10px;
+    color: #F8306D;
+} */
+
+
+/* .table-responsive-xs {
+    overflow-x: auto;
+    margin-left: 10px;
+    padding-left: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
+
+/* .name {
+    flex-basis: 60%;
+}
+
+.pricehalf,
+.pricefull {
+    flex-basis: 20%;
+    display: flex;
+    border-radius: 5%;
+} */
+
+.container {
+    padding-left: 0%;
+    padding-right: 0%;
+    background-color: #f5f5f5;
+    width: 100%;
+}
+
+.menuheader {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+.menubody {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.name {
+    flex-basis: 21%;
+}
+
+input {
+    width: 30px;
+    border-color: white;
+    border-width: 1px;
+}
+
+.increment {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: #F8306D;
+    color: white;
+    outline: none;
+    width: 30px;
+    border: none;
+}
+
+.decrement {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #F8306D;
+    color: white;
+    outline: none;
+    width: 30px;
+    border: none;
+}
+
+.orderplacing {
+    background-color: #F8306D;
+    color: white;
+    margin-top: 80%;
+    margin-left: 35%;
+    padding: 7px;
+    border: none;
+    outline: none;
+}

@@ -1,0 +1,37 @@
+{
+    "menu": [{
+            "category": "STARTERS",
+            "dishes": [{
+                    "id": "1",
+                    "Name": "Veg Cutlet",
+                    "Description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                    "Price_Half": "150/-",
+                    "Price_Full": "300/-",
+                    "Type": "veg"
+                },
+                {
+                    "id": "1",
+                    "Name": "Veg Cutlet",
+                    "Description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                    "Price_Half": "150/-",
+                    "Price_Full": "300/-",
+                    "Type": "veg"
+                }
+            ]
+        },
+        {
+            "category": "DESSERTS",
+            "dishes": [{
+                    "id": "1",
+                    "Name": "Brownie With Icecream",
+                    "Description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                    "Price_Half": "180/-",
+                    "Price_Full": "360/-",
+                    "Type": "veg"
+                }
+
+            ]
+        }
+
+    ]
+}

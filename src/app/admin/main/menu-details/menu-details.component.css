@@ -1,0 +1,280 @@
+/* h1 {
+    color: #222222;
+    
+    font-family: ArialNova;
+}
+
+h2 {
+    color: #222222;
+    font-family: ArialNova;
+}
+
+table {
+    width: 90%;
+}
+
+th {
+    background-color: #222222;
+    color: white;
+    font-family: ArialNova;
+    padding: 5px;
+}
+
+td {
+    padding-top: 10px;
+}
+
+.first {
+    padding-left: 10px;
+    width: 20%;
+}
+
+.second {
+    width: 54%;
+}
+
+.third {
+    width: 8%;
+}
+
+.fourth {
+    width: 8%;
+}
+
+table,
+td {
+  
+    border-collapse: collapse;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid#ddd;
+}
+
+tr:hover {
+    background-color: white;
+}
+
+.btn {
+    color: white;
+    background-color: #222222;
+    border-radius: 20px;
+}
+
+.menu {
+    background-color: #222222;
+    border: none;
+} */
+
+
+/* table {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+.category {
+    width: 15%;
+    font-family: Arial-Nova;
+}
+
+.description {
+    width: 40%;
+    font-family: Arial-Nova;
+    color: #343434;
+    padding-bottom: 20px;
+}
+
+.price {
+    width: 14%;
+    font-family: Arial-Nova;
+    color: #343434;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.action {
+    width: 8%;
+    font-family: Arial-Nova;
+    color: #343434;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.type {
+    width: 10%;
+    font-family: Arial-Nova;
+    color: #343434;
+    padding-bottom: 20px;
+}
+
+.content {
+    background-color: white;
+    box-shadow: 10px 2px 1px 1px rgb(223, 218, 218);
+    border-radius: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+.button {
+    padding: 5px;
+    border: none;
+    background-color: #f5f5f5;
+    outline: none;
+}
+
+.container {
+    display: inline-flex;
+} */
+
+.categorybutton {
+    padding: 0%;
+    border: none;
+    background-color: #f5f5f5;
+    outline: none;
+    margin-left: 20px;
+}
+
+.button {
+    padding: 0%;
+    border: none;
+    background-color: #f5f5f5;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+div {
+    display: inline;
+    padding-bottom: 50px;
+}
+
+.addnewitem {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+div,
+.dishname {
+    padding-bottom: 0%;
+}
+
+.dishname {
+    flex-basis: 15%;
+    box-shadow: 2px 5px 5px rgb(194, 191, 191)
+}
+
+.description {
+    flex-basis: 34%;
+    box-shadow: 2px 5px 5px rgb(194, 191, 191)
+}
+
+.pricehalf {
+    flex-basis: 10%;
+}
+
+.pricefull {
+    flex-basis: 10%;
+}
+
+.type {
+    flex-basis: 10%;
+}
+
+.buttonsave {
+    flex-basis: 10%;
+    background-color: #F8306D;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    padding-top: 3px;
+}
+
+.buttoncancel {
+    flex-basis: 5%;
+    border: none;
+    outline: none;
+    text-align: center;
+    height: 10px;
+    padding-top: 2px;
+    /* background-color: white; */
+}
+
+button,
+input,
+select,
+textarea {
+    background-color: white;
+    outline: none;
+    border: none;
+}
+
+
+/* span {
+    font-size: 20px;
+    font-family: Arial-Nova;
+    color: #343434;
+}
+
+.btn {
+    background-color: #F8306D;
+    color: white;
+    outline: none;
+    border: none;
+    width: 80px;
+}
+
+.form-inline input {
+    margin: 10px;
+}
+
+.btncancel {
+    color: #343434;
+    border: none;
+    background-color: #f5f5f5;
+    padding: 5px;
+}
+
+.editbut,
+.deletebut {
+    background-color: white;
+    border: none;
+}
+
+.newcategory {
+    margin-top: 20px;
+} */
+
+.maincategory,
+.mainprice {
+    width: 15%;
+}
+
+.maindescription {
+    width: 55%;
+}
+
+.maintype {
+    width: 5%;
+}
+
+.mainactions {
+    width: 20%;
+}
+
+.addCategory {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: auto;
+    width: 95%;
+}
+
+.categoryname {
+    flex-basis: 25%;
+    box-shadow: 2px 5px 5px rgb(194, 191, 191)
+}

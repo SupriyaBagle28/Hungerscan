@@ -1,0 +1,43 @@
+.restrodetail {
+    margin-left: 150px;
+    width: 900px;
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 0%;
+}
+
+label {
+    font-family: arial-nova;
+}
+
+.restrodetail input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    background-color: #f5f5f5;
+    box-shadow: none;
+}
+
+.container img {
+    float: left;
+}
+
+.container {
+    padding-left: 0%;
+    margin-top: 40px;
+}
+
+h2 {
+    margin-left: 50px;
+}
+
+.btn {
+    background-color: #F8306D;
+    color: white;
+    width: 80px;
+    float: right;
+    margin-top: 12%;
+}
